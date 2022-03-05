@@ -1,0 +1,141 @@
+@media screen and (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-toggler {
+        border: none;
+        outline: none;
+        width: 50px;
+        height: 50px;
+        top: 10%;
+        left: 10%;
+    }
+    #toggle {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: #c9ecee;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: -2%;
+        bottom: -10%;
+        transition: 0.2s;
+        border: 1px solid #000;
+        border-radius: 10%;
+        z-index: 4;
+    }
+    #toggle.active {
+        background: #37a6ff;
+    }
+    #toggle::before {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background: #fff;
+        transition: 0.5s;
+        transform: translateY(-10px);
+        box-shadow: 0 10px 0 #fff;
+    }
+    #toggle.active::before {
+        transform: translateY(0px) rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+    #toggle::after {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background: #fff;
+        transition: 0.5s;
+        transform: translateY(10px);
+    }
+    #toggle.active::after {
+        transform: translatex(0px) rotate(-45deg);
+    }
+    #toggle.active .menu {
+        display: block;
+        transition: 0.5s;
+    }
+    .overlay {
+        position: absolute;
+        width: 49px;
+        height: 49px;
+        background: #e2f5f4;
+        visibility: hidden;
+        left: 3.9%;
+        bottom: 0;
+        z-index: 3;
+        transition: transform 0.5s;
+        transform: scale(0, 0);
+        box-shadow: 2px 2px 50px rgba(0, 0, 0, 1.2);
+    }
+    .overlay.active {
+        transform: scale(7, 19.7);
+        visibility: visible;
+    }
+    .menu {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        z-index: 6;
+        display: none;
+    }
+    .menu.active {
+        display: block;
+        transition: 1s;
+    }
+    .menu ul {
+        position: absolute;
+        top: 11%;
+        left: 0;
+        /*transform: translate(-50%,-50%);*/
+        margin: 0;
+        padding: 0;
+        z-index: 6;
+    }
+    .menu ul li {
+        list-style: none;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        z-index: 6;
+        padding-left: 20px;
+        width: 230px;
+        transform: scale(1);
+        transition: 0.5s;
+    }
+    .menu ul li:not(:last-child) {
+        border-bottom: 3px solid #396475;
+    }
+    .menu ul li a {
+        position: relative;
+        font-size: 1.5rem;
+        color: #396475;
+        font-family: "baloo", "Molengo", sans-serif;
+        margin-top: 10%;
+        display: block;
+        height: 50px;
+        z-index: 6;
+    }
+    .menu ul li a:before {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background: #a8d3da;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s;
+    }
+    .menu ul li a:hover:before {
+        transform: scaleX(1);
+    }
+}

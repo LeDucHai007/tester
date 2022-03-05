@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+    border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.container-music {
+    font-family: "Poppins", sans-serif;
+}
+
+.music {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: #a8d3da;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    padding: 35px 15px 30px;
+}
+
+.music h5 {
+    text-align: center;
+    font-size: 1rem;
+    transform: translateY(-13px);
+    font-weight: 1000;
+}
+
+.music-thumb {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
+}
+
+.music-thumb.is-playing {
+    animation: spinner 10s infinite linear;
+}
+
+.music-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100rem;
+    box-shadow: 0 0 0 3px #c9ecee, 0 0 0 6px #a8d3da, 0 0 0 9px #c9ecee;
+}
+
+.music-name {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 40px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 40px;
+    transform: translateX(30px);
+}
+
+.controls ion-icon {
+    display: block;
+}
+
+.play {
+    position: relative;
+}
+
+.player-inner {
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    background: #c9ecee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.play::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to right bottom, #ff6bcb, #ffb86c);
+    transform: scale(1.5);
+    border-radius: 100rem;
+}
+
+.play-repeat {
+    cursor: pointer;
+}
+
+
+/* .volume-input-div [type="range"] {
+    margin: 0;
+    padding: 0;
+    width: 52px;
+    height: 1.5em;
+    background: transparent;
+    outline: none;
+}
+
+.volume-input-div [type="range"],
+.volume-input-div [type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.volume-input-div [type="range"]::-webkit-slider-thumb {
+    box-sizing: border-box;
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 100rem;
+    background: #000;
+}
+
+.volume-input-div [type="range"]::-moz-range-thumb {
+    box-sizing: border-box;
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 100rem;
+    background: #000;
+}
+
+.controls {
+    height: 100%;
+    display: flex;
+}
+
+.controls .volume-panel {
+    position: relative;
+    width: 0px;
+    overflow: hidden;
+}
+
+.controls .volume-panel .input-div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 52px;
+    height: 3px;
+}
+
+.controls .volume-panel .input-div .volume-input-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #999;
+}
+
+.controls .volume-panel .input-div .volume-input-div input {
+    position: absolute;
+    top: -10.5px;
+    cursor: pointer;
+}
+
+.controls .volume-panel .input-div .volume-input-div .volume-progress {
+    background: #000;
+    width: 35px;
+    height: 100%;
+} */
+
+.play-back,
+.play-forward {
+    cursor: pointer;
+}
+
+.range {
+    -webkit-appearance: none;
+    /* Hides the slider so that custom slider can be made */
+    width: 100%;
+    /* Specific width is required for Firefox. */
+    background: transparent;
+    /* Otherwise white in Chrome */
+    margin-bottom: 30px;
+}
+
+.range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: #c9ecee;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    background: #20e3b2;
+    margin-top: -4px;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px rgba(100, 100, 111, 0.05);
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.play-repeat {
+    cursor: pointer;
+}

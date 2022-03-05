@@ -1,0 +1,392 @@
+/*@media screen and (max-width:768px) {*/
+
+
+/*.title-sun{
+	margin-left: 85%;
+	margin-top: 2%;
+	z-index: 1;
+	position: relative;
+
+	
+}
+
+#title-sun{
+	width: 100%;
+}
+
+.title-dove{
+	margin-left: 17%;
+	padding-bottom: 4%;
+	display: block;
+	width: 80%;
+	z-index: 6;
+	position: relative;
+
+}
+
+#title-dove{
+
+	width: 15%;
+	z-index: 1;
+	position: relative;
+}
+
+.title-fada{
+	margin-top: 10%;
+	z-index: 1;
+	position: relative;
+}
+
+
+
+.form{
+	
+	background: rgba(100, 216, 230, 0.3);
+	width: 30%;
+	height: 250px;
+	z-index: 5;
+	margin-left: 22%;
+	position: relative;
+	margin-top: -10%;
+
+
+}
+
+.form{
+	width: 300px;
+	padding: 30px 30px 40px;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
+
+}
+
+
+.form-login{
+	
+	max-width: 300px ;
+	flex-grow: 1;
+	
+}
+
+h1{
+	font-size: 27px;
+	color: black;
+	text-align: center;
+}
+
+.form-input{
+	background: transparent;
+	border: 0;
+	outline: 0;
+	color: black;
+	flex-grow: 1;
+}
+
+.form-group{
+	border-bottom: 1px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px ;
+	display: flex;
+}
+
+.form-input:placeholder{
+	color: black;
+}
+
+.form-submit{
+	background: transparent;
+	border: 1px solid black;
+	width: 100%;
+	color: black;
+	text-transform: uppercase;
+	padding: 7px 7px 7px 7px;
+	transition: 0.25s ease-in-out;
+	margin-top: 10px;
+}
+
+.form-submit:hover{
+	color: white;
+	border: 1px solid white;
+	
+
+}
+
+i{
+	padding-top: 5px;
+}
+
+.title-fada{
+	margin-left: -500px;
+
+}
+
+#title-fada{
+	width: 300px;
+}
+
+.title-walkers{
+	margin-left: 300px;
+	margin-top: -60px;
+	z-index: 2;
+
+}
+
+#title-walkers{
+	width: 250px;
+}
+
+.title-road{
+	margin-left: -300px;
+	margin-top: 180px;
+	z-index: 1;
+}
+
+#title-road{
+	width: 400px;
+}
+
+.view{
+	margin-left: -150px;
+	margin-top: -200px;
+	
+
+}
+
+#view{
+	width: 500px;
+}
+
+#Login{
+	margin-left: 400px;
+}
+/*}*/
+
+body {
+    background: #c9ecee;
+}
+
+.peoples {
+    width: 700px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#peoples {
+    width: 700px;
+}
+
+.yellow-star {
+    width: 100px;
+    position: fixed;
+    bottom: 100px;
+    left: 300px;
+    z-index: 1;
+}
+
+#yellow-star {
+    width: 100px;
+}
+
+.blue-star {
+    width: 150px;
+    position: fixed;
+    top: 150px;
+    left: 100px;
+    z-index: 1;
+}
+
+#blue-star {
+    width: 150px;
+}
+
+.orange-planet {
+    height: 150px;
+    width: 220px;
+    position: fixed;
+    transform: rotate(-25deg);
+    top: 350px;
+    left: 150px;
+    z-index: 1;
+}
+
+#orange-planet {
+    height: 150px;
+    width: 220px;
+}
+
+.pink-circle {
+    width: 200px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#pink-circle {
+    width: 200px;
+}
+
+.white-circle {
+    width: 110px;
+    position: fixed;
+    top: 40px;
+    left: 140px;
+    z-index: 1;
+}
+
+#white-circle {
+    width: 110px;
+}
+
+.glass {
+    width: 550px;
+    height: 1000px;
+    background: rgba(240, 248, 255, 0.5);
+    position: fixed;
+    left: 31.5%;
+    z-index: 2;
+}
+
+.purple-circle {
+    width: 350px;
+    position: fixed;
+    top: -10px;
+    left: 19%;
+    z-index: 5;
+}
+
+#purple-circle {
+    width: 350px;
+}
+
+.earth {
+    width: 350px;
+    position: fixed;
+    top: 0px;
+    left: 38%;
+    z-index: 4;
+}
+
+#earth {
+    width: 350px;
+}
+
+.form {
+    width: 350px;
+    height: 400px;
+    z-index: 10;
+    position: fixed;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.form label {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translate(-50px);
+    pointer-events: none;
+    transition: .5s;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.form-sign-in {
+    border: none;
+    color: green;
+    font-weight: bold;
+    background: transparent;
+    width: 100%;
+    font-size: 40px;
+    font-family: "Baloo", sans-serif;
+}
+
+.form-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    flex-grow: 1;
+    padding-left: 10px;
+    box-sizing: border-box;
+    box-shadow: none;
+    /*margin-top: 30px;*/
+}
+
+.form-input:focus~label,
+.form-input:valid~label {
+    top: -85%;
+    left: 16%;
+    /*color: #000;
+	font-size: 1.2em;*/
+    font-weight: 400;
+}
+
+.form-input::placeholder {
+    color: black;
+}
+
+.form-group {
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 4px solid #000;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    display: flex;
+    position: relative;
+}
+
+#form-icon {
+    padding-bottom: 1px;
+}
+
+.eye {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: red;
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.forgot-password:hover {
+    color: rgb(146, 0, 0);
+    text-decoration: none !important;
+}
+
+.form-sign-up {
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#form-sign-up {
+    color: purple;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: "Baloo", sans-serif;
+}
+
+
+/*.myButton:active {
+	position:relative;
+	top:1px;
+}*/

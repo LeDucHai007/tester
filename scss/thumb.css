@@ -1,0 +1,193 @@
+:root {
+  --clr-primary: hsl(241, 36%, 62%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Baloo2", sans-serif;
+  line-height: 1.5;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+.fancy-card-grib {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: min(100% - 2rem, 20rem);
+  gap: 1rem;
+}
+
+.fancy-card {
+  display: grid;
+  text-align: center;
+  background: #fff;
+}
+.fancy-card-title {
+  font-size: 1rem;
+  line-height: 1;
+}
+.fancy-card .fancy-card-image {
+  width: 60%;
+  margin: auto;
+}
+.fancy-card::before, .fancy-card::after {
+  content: "";
+  position: absolute;
+}
+.fancy-card::after {
+  background: #000;
+  z-index: -1;
+}
+.fancy-card:hover, .fancy-card:focus {
+  transform: scale(1.25);
+  transition: transform 350ms ease;
+  animation: shake 500ms ease-in;
+  animation-delay: 500ms;
+  z-index: 10;
+}
+.fancy-card:hover::after, .fancy-card:focus::after {
+  background: #000;
+}
+.fancy-card:hover .img, .fancy-card:focus .img {
+  transition: transform 350ms ease;
+}
+.fancy-card:hover .img:nth-of-type(3), .fancy-card:focus .img:nth-of-type(3) {
+  transition-delay: 800ms;
+}
+.fancy-card:hover .img:nth-of-type(4), .fancy-card:focus .img:nth-of-type(4) {
+  transition-delay: 900ms;
+}
+.fancy-card:hover .img:nth-of-type(5), .fancy-card:focus .img:nth-of-type(5) {
+  transition-delay: 1000ms;
+}
+.fancy-card:hover .img:nth-of-type(6), .fancy-card:focus .img:nth-of-type(6) {
+  transition-delay: 1100ms;
+}
+.fancy-card:hover .img:nth-of-type(7), .fancy-card:focus .img:nth-of-type(7) {
+  transition-delay: 1200ms;
+}
+.fancy-card:hover .img, .fancy-card:focus .img {
+  transform: rotate(-20deg) translate(80%, 20%);
+  opacity: 1;
+  transition-delay: 500ms;
+}
+.fancy-card:hover .img:nth-of-type(2), .fancy-card:focus .img:nth-of-type(2) {
+  transform: translate(0%, -180%) rotate(10deg);
+}
+.fancy-card:hover .img:nth-of-type(3), .fancy-card:focus .img:nth-of-type(3) {
+  transform: translate(-80%, -100%) rotate(-10deg);
+}
+.fancy-card:hover .img:nth-of-type(4), .fancy-card:focus .img:nth-of-type(4) {
+  transform: translate(-50%, -10%) rotate(5deg);
+}
+.fancy-card:hover .img:nth-of-type(5), .fancy-card:focus .img:nth-of-type(5) {
+  transform: translate(100%, -100%) rotate(15deg);
+}
+.fancy-card .img {
+  position: absolute;
+  z-index: -10;
+  bottom: 0;
+  width: 70%;
+  opacity: 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1.25);
+  }
+  25% {
+    transform: scale(1.25) rotate(10deg);
+  }
+  40% {
+    transform: scale(1.25) rotate(-10deg);
+  }
+  50% {
+    transform: scale(1.25) rotate(5deg);
+  }
+  60% {
+    transform: scale(1.25) rotate(-10deg);
+  }
+  75% {
+    transform: scale(1.25) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+/*# sourceMappingURL=thumb.css.map */

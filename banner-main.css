@@ -1,0 +1,74 @@
+#title-section{
+  background-color: #a8d3da;
+  color: #3b5360;
+
+}
+
+.big-heading {
+  font-size:5rem;
+  
+  
+  position: relative;
+  top: 15%;
+  left: 25%;
+  
+}
+
+
+.title-footer{
+  position: relative;
+  padding-bottom: 39%;
+  font-size: 1.3rem;
+  color: #435560;
+  left: 34%;
+  top: 12%;
+}
+
+.title-sun{
+
+  
+  width: 30%;
+  position: absolute;
+  left: 68%;
+  top: -2%;
+}
+
+.title-dove{
+  
+  width: 20%;
+  position: absolute;
+  left: -85%;
+  top: 5%;
+}
+
+.title-fada{
+  
+  width: 28%;
+  position: absolute;
+  top: 75%;
+  left: -90%;
+}
+
+
+.title-walkers{
+  width: 16%;
+  position: absolute;
+  bottom: 16%;
+  right: 65%;
+  z-index: 2;
+}
+
+.title-road{
+  width: 42%;
+  position: absolute;
+  bottom: -0.5%;
+  z-index: 1;
+}
+
+.title-house{
+  
+  width: 68%;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}

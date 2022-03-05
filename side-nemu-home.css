@@ -1,0 +1,223 @@
+.sidebar{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	top: 10%;
+	left: 0.5%;
+	box-sizing: border-box;
+	font-family: "poppins", sans-serif;
+	height: 80%;
+	width: 85px;
+	background: #E2F5F4;
+	padding: 0 0;
+	z-index: 10;
+	border-radius: 12px;
+	transition: all 0.5s ease;
+
+}
+
+.sidebar:hover{
+	box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar.active{
+	width: 240px;
+}
+
+.sidebar .logo_content .logo{
+	display: flex;
+	height: 50px;
+	width: 100%;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.5s ease;
+
+}
+
+.sidebar.active .logo_content .logo{
+	opacity: 1;
+	pointer-events: none;
+}
+
+.sidebar .logo_content .logo .logo-name{
+	font-size: 20px;
+	font-weight: 400;
+	padding-left: 20px;
+
+
+}
+
+.sidebar #btn{
+	color: #000;
+	position: absolute;
+	top: 1%;
+	left: 20%;
+	font-size: 20px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	
+}
+
+
+.sidebar.active #btn{
+	left: 75%;
+}
+
+.sidebar ul{
+	margin-top: 20px;
+	margin-left: -25px;
+}
+
+
+.sidebar ul li{
+	list-style: none;
+	height: 50px;
+	width: 70%;
+	position: relative;
+	margin: 0 5px;
+	line-height: 50px;
+	
+
+}
+
+.sidebar.active ul li{
+	width: 90%;
+}
+
+.sidebar ul li #tooltip{
+	position: absolute;
+	left: 122px;
+	top: 0;
+	transform: translate(-40% , -50%);
+	border-radius: 6px;
+	height: 35px;
+	width: 122px;
+	background: #fff;
+	line-height: 35px;
+	text-align: center;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+	z-index: 12;
+	transition: 0s;
+	opacity: 0;
+	pointer-events: none;
+	display: block;
+
+}
+
+.sidebar.active ul li #tooltip{
+	display: none;
+}
+
+.sidebar ul li:hover #tooltip{
+	
+	transition: all 0.5s ease;
+	top: 50%;
+	opacity: 1;
+}
+
+.sidebar ul li a{
+	color: #000;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	transition: all 0.4s ease;
+	border-radius: 12px;
+	white-space: nowrap;
+}
+
+.sidebar ul li a:hover{
+	color: #11101d;
+	background: #fff;
+}
+
+
+.sidebar ul li a i{
+	height: 50px;
+	min-width: 50px;
+	border-radius: 12px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 400;
+	color: #396475;
+}
+
+
+
+.sidebar .links_name{
+	opacity: 0;
+	pointer-events: none;
+}
+
+
+
+.sidebar.active .links_name{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+.sidebar .profile_content{
+	position: absolute;
+	color: #000;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+}
+
+.sidebar .profile_content .profile{
+	position: relative;
+	padding: 10px 6px;
+	height: 60px;
+	background: #1d1b31;
+	border-radius: 12px;
+
+}
+
+.sidebar .profile_content .profile .profile_details{
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.5s ease;
+	white-space: nowrap;
+}
+
+.sidebar.active .profile .profile_details{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.sidebar .profile_content .profile .profile_details .name{
+	font-size: 25px;
+	font-weight: 800;
+	position: absolute;
+	left: 38%;
+	bottom: 20%;
+	color: #fff;
+
+}
+
+.sidebar .profile_content .profile #log_out{
+	position: absolute;
+	left: 20%;
+	bottom: 10%;
+	font-size: 20px;
+	transform: rotate(180deg);
+	
+	min-width: 50px;
+	line-height: 50px;
+	border-radius: 12px;
+	color: #fff;
+	transition: all 0.5s ease;
+	text-align: center;
+}
+
+.sidebar.active .profile #log_out{
+	left: 70%;
+	transition: all 0.5s ease;
+}

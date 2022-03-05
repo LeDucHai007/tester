@@ -1,0 +1,131 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: consolas;
+}
+
+/*body{
+	overflow: hidden;
+
+}*/
+
+.searchBox{
+	position: relative;
+	width: 65px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	margin-left: 5px;
+	margin-top: 6px;
+}
+
+.searchBox::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 100%;
+	background: linear-gradient(#fff,#fff,#fff,#e3e3e3);
+	z-index: 1;
+	filter: blur(1px);
+}
+
+.searchBox::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -1px;
+	width: 10px;
+	height: 100%;
+	background: #9d9d9d;
+	z-index: 1;
+	filter: blur(1px);
+}
+
+.searchBox:hover{
+	width: 400px;
+}
+
+
+
+.searchBox input{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 10px 25px;
+	outline: none;
+	font-size: 1.1em;
+	color: #555;
+	background: linear-gradient(#dbdae1, #a3aaba);
+	/*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+	15px 15px 15px rgba(0, 0, 0, 0.1),
+	20px 20px 15px rgba(0, 0, 0, 0.1),
+	30px 30px 15px rgba(0, 0, 0, 0.1),
+	inset 1px 1px 2px #fff;*/
+}
+
+.searchBox input::placeholder{
+	color: transparent ;
+}
+
+.searchBox:hover input::placeholder{
+	color: #555 ;
+}
+
+ion-icon{
+	position: absolute;
+	right: 20px;
+	color: #555;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+/*.searchBox ul li{
+	border-top: 1px solid white;
+    width: 100%;
+}
+
+.searchBox ul{
+	position: absolute;
+    display: none;
+    top: 100%;
+    width: 100%;
+}
+
+.searchBox ul: hover{
+	display: block;
+}
+
+.list{
+	display: none;
+}
+
+.list>li{
+	font-size: 15px;
+
+    border-right: none;
+    background-color: black;
+    border-bottom: 1px solid white;
+}*/
+
+.list{
+	position: absolute;
+	top: 120%;
+	left: 0;
+	display: none;
+	background: #c9ecee;
+	width: 350px;
+	padding-left: 40px;
+	border-radius: 7%;
+	z-index: 5;
+	/*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+	15px 15px 15px rgba(0, 0, 0, 0.1),
+	20px 20px 15px rgba(0, 0, 0, 0.1),
+	30px 30px 15px rgba(0, 0, 0, 0.1),
+	inset 1px 1px 2px #fff;*/
+}

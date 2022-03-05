@@ -1,0 +1,163 @@
+html,
+body {
+    width: 100%;
+}
+
+@media screen and (min-width: 767px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .main-box {
+        display: flex;
+        align-items: center;
+        /*width: 1170px;*/
+        width: 1500px;
+        margin-left: 5%;
+    }
+    .main-box2 {
+        display: flex;
+        align-items: center;
+        margin-left: -7%;
+        width: 1500px;
+    }
+    .box {
+        position: relative;
+        width: 250px;
+        height: 350px;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        right: -330px;
+    }
+    .box img {
+        position: absolute;
+        backface-visibility: hidden;
+        transition: 1s;
+        justify-content: center;
+        align-items: center;
+    }
+    .box img:nth-child(2) {
+        transform: rotateY(180deg);
+    }
+    .box:hover img:nth-child(2) {
+        transform: rotateY(0deg);
+    }
+    .box:hover img:nth-child(1) {
+        transform: rotateY(-180deg);
+    }
+    .han {
+        width: 230px;
+        border-radius: 5px;
+    }
+    .han-ct {
+        left: -45px;
+        bottom: -50px;
+    }
+    .box2 {
+        position: relative;
+        width: 250px;
+        height: 350px;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        right: -450px;
+        bottom: -40px;
+    }
+    .box2 img {
+        position: absolute;
+        backface-visibility: hidden;
+        transition: 1s;
+        justify-content: center;
+        align-items: center;
+    }
+    .box2 img:nth-child(2) {
+        transform: rotateY(180deg);
+    }
+    .box2:hover img:nth-child(2) {
+        transform: rotateY(0deg);
+    }
+    .box2:hover img:nth-child(1) {
+        transform: rotateY(-180deg);
+    }
+    .nguyen {
+        width: 230px;
+        border-radius: 5px;
+    }
+    .nguyen-ct {
+        left: -75px;
+    }
+    .box3 {
+        position: relative;
+        width: 100px;
+        height: 350px;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        left: -80px;
+    }
+    .box3 img {
+        position: absolute;
+        backface-visibility: hidden;
+        transition: 1s;
+        justify-content: center;
+        align-items: center;
+    }
+    .box3 img:nth-child(2) {
+        transform: rotateY(180deg);
+    }
+    .box3:hover img:nth-child(2) {
+        transform: rotateY(0deg);
+    }
+    .box3:hover img:nth-child(1) {
+        transform: rotateY(-180deg);
+    }
+    .an {
+        width: 230px;
+        border-radius: 5px;
+        right: -400px;
+    }
+    .an-ct {
+        right: -600px;
+        bottom: -10px;
+    }
+    ----------------------------------------------------------Hải--------------------------------------------- .box4 {
+        position: relative;
+        width: 100px;
+        height: 350px;
+        /*right: -90%;*/
+        background: black;
+        /*top: -100px;*/
+        float: left;
+    }
+    .box4 img {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+    .hai {
+        width: 630px;
+        border-radius: 5px;
+        margin-top: -140px;
+        margin-left: 270px;
+        /*bottom: -152%;
+	right: 15%;
+	*/
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-box {
+        /* display: flex;
+        align-items: center;
+        /*width: 1170px;*/
+        /* width: 1500px;
+        margin-left: 5%; */
+        display: none;
+    }
+    .main-box2 {
+        /* display: flex;
+        align-items: center;
+        margin-left: -7%;
+        width: 1500px; */
+        display: none;
+    }
+}

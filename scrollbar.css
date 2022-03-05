@@ -1,0 +1,14 @@
+body::-webkit-scrollbar{
+	width: 12px;
+}
+
+body::-webkit-scrollbar-thumb{
+	width: 10px;
+	background-image: linear-gradient(to bottom, #43B7FF,#F1A5DA);
+	border-radius: 100rem;
+}
+
+body::-webkit-scrollbar-track{
+	background-color: #c9ecee;
+	border-radius: 100rem;
+}

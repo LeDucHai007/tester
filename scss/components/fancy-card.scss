@@ -1,0 +1,96 @@
+.fancy-card-grib {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: min(100% - 2rem, 20rem);
+    gap: 1rem;
+}
+
+.fancy-card {
+    display: grid;
+    text-align: center;
+    background: #fff;
+    &-title {
+        font-size: 1rem;
+        line-height: 1;
+    }
+    .fancy-card-image {
+        width: 60%;
+        margin: auto;
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+    }
+    &::after {
+        background: #000;
+        z-index: -1;
+    }
+    &:hover,
+    &:focus {
+        transform: scale(1.25);
+        transition: transform 350ms ease;
+        animation: shake 500ms ease-in;
+        animation-delay: 500ms;
+        z-index: 10;
+        &::after {
+            background: #000;
+        }
+        .img {
+            transition: transform 350ms ease;
+        }
+        @for $image from 3 through 7 {
+            .img:nth-of-type(#{$image}) {
+                transition-delay: 500ms + ($image * 100);
+            }
+        }
+        .img {
+            transform: rotate(-20deg) translate(80%, 20%);
+            opacity: 1;
+            transition-delay: 500ms;
+        }
+        .img:nth-of-type(2) {
+            transform: translate(0%, -180%) rotate(10deg);
+        }
+        .img:nth-of-type(3) {
+            transform: translate(-80%, -100%) rotate(-10deg);
+        }
+        .img:nth-of-type(4) {
+            transform: translate(-50%, -10%) rotate(5deg);
+        }
+        .img:nth-of-type(5) {
+            transform: translate(100%, -100%) rotate(15deg);
+        }
+    }
+    .img {
+        position: absolute;
+        z-index: -10;
+        bottom: 0;
+        width: 70%;
+        opacity: 0;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: scale(1.25);
+    }
+    25% {
+        transform: scale(1.25) rotate(10deg);
+    }
+    40% {
+        transform: scale(1.25) rotate(-10deg);
+    }
+    50% {
+        transform: scale(1.25) rotate(5deg);
+    }
+    60% {
+        transform: scale(1.25) rotate(-10deg);
+    }
+    75% {
+        transform: scale(1.25) rotate(-5deg);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}

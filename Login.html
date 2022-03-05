@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+    <link rel="shortcut icon" type="image/ico" href="favicon (1).ico" />
+    <meta charset="utf-8">
+    <title>SOB FORM LOGIN</title>
+    <!--Fontawesome link-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:wght@500&family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="Login.css">
+    <!-- <link rel="stylesheet" href="p-n-button-login.css"> -->
+    <link rel="stylesheet" href="side-nemu-home.css">
+
+
+</head>
+
+<body>
+    <!-- <div id="Main">
+
+        <div class="row">
+
+            <div class="title-sun">
+                <img src="16.png" id="title-sun">
+            </div>
+            <div class="title-dove">
+                <img src="dove.gif" id="title-dove">
+            </div>
+            <div class="form">
+                <form action="" class="form-login"></form>
+                <h1>Login Form</h1>
+                <div class="form-group">
+                    <i class="far fa-user"></i>
+                    <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                </div>
+                <div class="form-group">
+                    <i class="far fa-key"></i>
+                    <input type="password" class="form-input" placeholder="Mật khẩu đăng nhập">
+                    <div class="eye">
+                        <i class="far fa-eye"></i>
+
+                    </div>
+                </div>
+
+                <input type="submit" value="Đăng nhập" class="form-submit">
+
+
+            </div>
+            <div class="title-fada">
+                <img src="7.png" id="title-fada">
+            </div>
+            <div class="title-walkers">
+                <img src="5.png" id="title-walkers">
+            </div>
+            <div class="title-road">
+                <img src="14.png" id="title-road">
+            </div>
+            <div class="view">
+                <img src="view.gif" id="view">
+            </div>
+        </div>
+
+
+
+
+    </div> -->
+
+    <div class="wrapper">
+        <div class="peoples">
+            <img src="peoples.png" id="peoples">
+        </div>
+        <div class="yellow-star">
+            <img src="yellow-star.png" id="yellow-star">
+        </div>
+        <div class="blue-star">
+            <img src="blue-star.png" id="blue-star">
+        </div>
+        <div class="orange-planet">
+            <img src="orange-planet.png" id="orange-planet">
+        </div>
+        <div class="pink-circle">
+            <img src="pink-circle.png" id="pink-circle">
+        </div>
+        <div class="white-circle">
+            <img src="white-circle.png" id="white-circle">
+        </div>
+        <div class="glass">
+            <div class="form">
+                <form onsubmit="onFormSubmit(event)" class="form-login"></form>
+
+                <input type="submit" value="SIGN IN" class="form-sign-in">
+                <div class="form-group">
+                    <i class="far fa-user fa-2x" id="form-icon"></i>
+                    <input type="text" class="form-input" id="user-name" placeholder="User name">
+                </div>
+                <div class="tb-user">
+
+                </div>
+                <div class="form-group">
+                    <i class="far fa-key fa-2x" id="form-icon"></i>
+                    <input type="password" class="form-input" id="password" placeholder="Password">
+                    <div id="eye">
+                        <i class="far fa-eye-slash" class="eye"></i>
+
+                    </div>
+                    <div class="tb-pass">
+
+                    </div>
+                </div>
+                <a class="forgot-password" href="forgot-password.html">Forgot password?</a>
+                <div class="form-sign-up">
+                    <a href="sign-up.html" id="form-sign-up">SIGN UP</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="purple-circle">
+        <img src="purple-circle.png" id="purple-circle">
+    </div>
+    <div class="earth">
+        <img src="SOB - ELEMEN+S.gif" id="earth">
+    </div>
+    <!-- <div class="button">
+        <div class="p-n-button">
+            <ul>
+
+                <a href="index.html">
+                    <li class="prev"><span>Home</span></li>
+                </a>
+            </ul>
+        </div>
+    </div> -->
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <div class="logo-name">SOB</div>
+            </div>
+            <i class="fas fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span id="tooltip">Home</span>
+            </li>
+
+            <li>
+                <a href="storyline.html">
+                    <i class="far fa-book"></i>
+                    <span class="links_name">Storyline</span>
+                </a>
+                <span id="tooltip">Storyline</span>
+            </li>
+
+            <li>
+                <a href="other.html">
+                    <i class="fas fa-info-circle"></i>
+                    <span class="links_name">More</span>
+                </a>
+                <span id="tooltip">More</span>
+            </li>
+
+            <li>
+                <a href="Video.html">
+                    <i class="fas fa-photo-video"></i>
+                    <span class="links_name">Videos</span>
+                </a>
+                <span id="tooltip">Videos</span>
+            </li>
+
+            <li>
+                <a href="about-us.html">
+                    <i class="fas fa-users"></i>
+
+                    <span class="links_name">About us</span>
+                </a>
+                <span id="tooltip">About us</span>
+            </li>
+
+            <li>
+                <a href="Login.html">
+                    <i class="far fa-sign-in-alt"></i>
+                    <span class="links_name">Login</span>
+                </a>
+                <span id="tooltip">Login</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+
+                    <div class="name">SOB</div>
+
+                </div>
+                <i class="far fa-sign-in-alt" id="log_out"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+        $("#eye").click(function() {
+            $(this).toggleClass('open');
+            $(this).children('i').toggleClass('fa-eye fa-eye-slash');
+            if ($(this).hasClass('open')) {
+
+                $(this).prev().attr('type', 'text');
+            } else {
+                $(this).prev().attr('type', 'password')
+            }
+        });
+    });
+</script>
+
+<script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function() {
+
+        sidebar.classList.toggle("active");
+    }
+</script>
+
+
+
+
+
+
+
+
+</html>

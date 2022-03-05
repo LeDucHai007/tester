@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="body-card">
+        <div class="card">
+            <div class="card-content">
+                <h2 class="card-title"><span class="title-1">Content</span><span class="title-2">Nội dung</span></h2>
+                <p class="card-body"><span class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque ad, dolorum animi a provident blanditiis beatae! Pariatur minus temporibus ratione voluptatibus quos optio illum doloribus vero, eius earum error.</span>
+                    <span class="p2">Bản thân nỗi đau là quan trọng đối với tầng lớp ưa thích chính. Và đối với kiến ​​trúc sư, họ cung cấp cho những cái vuốt ve của một tâm hồn hạnh phúc! Kết quả là ít hơn về thời gian vui vẻ, so với những lúc được
+                lựa chọn</span>
+
+                </p>
+
+
+                <div class="button">
+                    <snap id="button-1">Vietnamese</snap>
+                    <snap id="button-2">English</snap>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- <script>
+    $(".button").on("click", function() {
+        $(this).parent().toggleClass("Vietnamese");
+        var replaceText = $(this).parent().hasClass("Vietnamese") ?
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque ad, dolorum animi a provident blanditiis beatae! Pariatur minus temporibus ratione voluptatibus quos optio illum doloribus vero, eius earum error." :
+            "Read more";
+        $(this).text(replaceText);
+    });
+</script> -->
+
+<script>
+    let button = document.querySelector(".button")
+    let title1 = document.querySelector(".title-1");
+    let title2 = document.querySelector(".title-2");
+    let p1 = document.querySelector(".p1");
+    let p2 = document.querySelector(".p2");
+    let button1 = document.querySelector("#button-1");
+    let button2 = document.querySelector("#button-2");
+
+    button.onclick = function() {
+
+        p1.classList.toggle("Vietnamese");
+        p2.classList.toggle("Vietnamese");
+        title1.classList.toggle("Vietnamese");
+        title2.classList.toggle("Vietnamese");
+        button1.classList.toggle("Vietnamese");
+        button2.classList.toggle("Vietnamese");
+    };
+</script>
+
+<script>
+    let card = document.querySelector(".card")
+    card.onclick = function() {
+
+    }
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $("card").onclick(function() {
+            $(".card").fadeOut();
+        });
+    });
+</script>
+
+</html>

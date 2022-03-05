@@ -1,0 +1,38 @@
+#menu-1{
+  background: url(bg-menu-home.png) no-repeat;
+  background-size: cover;
+  color: #DC5B03;
+ 
+  
+
+}
+
+#menu-2{
+  background: url(bg-menu-2.png) no-repeat;
+  background-size: cover;
+  color: #E6A33D;
+}
+
+#menu-3{
+  background: url(bg-menu-3.png) no-repeat;
+  background-size: cover;
+  color: #E1B444;
+}
+
+#menu-4{
+  background: url(bg-menu-4.png) no-repeat;
+  background-size: cover;
+  color: #5E9E3E;
+}
+
+#menu-5{
+  background: url(bg-menu-5.png) no-repeat;
+  background-size: cover;
+  color: #3B7A90;
+}
+
+#menu-6{
+  background: url(bg-menu-6.png) no-repeat;
+  background-size: cover;
+  color: #A878DB;
+}
